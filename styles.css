@@ -1,0 +1,107 @@
+body {
+    background-color: #F5F5DE;
+    min-width:850px;
+    margin:30px;
+    box-shadow: 7px 7px 5px black;
+}
+
+header {
+    background-color: #ccaa66;
+    width:auto;
+    height:100px;
+    background-image: url("images/video-player.png"); /* Banner image taken from http://www.blueeyedrabbit.com/chapter4/javalogo.gif */
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    background-size: 3em;
+}
+.wrapper {
+    width:auto;
+    height:auto;
+    position:relative;
+}
+.music_wrapper {
+    width:475px;
+    height:400px;
+    /* padding-left:115px; */
+    /* margin-bottom: 40px; */
+    /* text-align-last: center; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+    float: top;
+    width: 150px;
+    background-color: #DFD2B4;
+    height: 100%;
+    position: absolute;
+}
+.content {
+    margin-left:150px;
+    padding:10px;
+}
+footer {
+    background-color: #ccaa66;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    width: auto;
+    /* height: 70px; */
+    clear: both;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#music_image {
+    float:left;
+    padding-right:40px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    /* margin-left:45px; */
+}
+#homepage_image {
+    float:left;
+    padding-right:40px;
+    margin-left:40px;
+    padding-bottom: 50px;
+}
+h1 {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size:24px;
+    padding-left:0;
+    margin-top:0;
+    color: #300402
+}
+h2 {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size:18px;
+    background-color:#DFD2B4;
+    color: #582f0e;
+}
+nav ul{
+    list-style: none;
+}
+ul.homepage {
+    list-style-image: url(images/coffee.png); /* coffee icon taken from https://www.flaticon.com/free-icons/coffee  */
+    padding-left: 410px;
+}
+
+p {
+    color: #582f0e;
+}
+nav a {
+    text-decoration: none;
+    color: #582f0e;
+    font-weight: bold;
+    font-size:large;
+    font-family: Arial, sans-serif;
+}
+a:active {
+    text-decoration: none;
+    color: #7d5540;
+    font-weight: bold;
+    font-size:large;
+    font-family: Arial, sans-serif;
+}
