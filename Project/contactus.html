@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Atlantic Cinema</title>
+<meta charset="utf-8">
+
+
+<link rel="stylesheet" href="assets/css/atlantic.css">
+<script defer src="assets/js/form.js"></script>
+<script defer src="assets/js/Contactform.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<div class="logo">
+	<img src="assets/img/logo.gif" height="90" width="250" alt="logo">
+	</div>
+	
+</header>
+<nav><ul>
+	 <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="buytickets.html">Buy Tickets</a></li>
+        <li><a href="cart.html">Cart</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>
+		
+								
+								
+</li>
+
+</ul>
+</nav>
+<main>
+<table >
+<tr><th>Email:</th> <td>Atlantic_Cinema@gmail.com</td> 
+</tr>
+<tr><th>Contact No:</th><td>6123 4567</td> 
+</tr>
+<tr><th>Location:</th> <td>Atlantic_Cinema@gmail.com</td> 
+</tr>
+<tr><th>Opening Hours:</th><td>Atlantic_Cinema@gmail.com</td> 
+</tr>
+
+</table>
+<br> <br>
+ <form method="post" action="assets/php/show_post.php">
+           Please send in your queries <br> 
+		   <label for = "name"> Name: </label>
+	<input type = "name" name = "name" id = "name" required placeholder = "Enter your Name here" onchange="validateName()"> <br><br>
+	<label for = "email"> E-mail: </label>
+	<input type = "email" name = "email" id = "email" required placeholder = "Enter your Email-ID here" onchange="validateEmail()"> <br><br>
+	
+	<label for = "Comment"> Comment: </label>
+	<textarea name = "Comment" id = "Comment" rows = "4" cols = "40" required placeholder = "Enter your Comment here"></textarea> <br><br>
+	<input type = "submit" value = "Submit"> 
+		<input type = "reset" value = "Reset"> 	
+			
+          </form>
+
+</main>
+
+
+<footer>
+  <form method="post" action="assets/php/show_post.php">
+           
+		   
+	
+	<input type = "email" name = "email" id = "email" required placeholder = "Enter your email address" onchange="validateEmail()"> 
+
+	<input type="submit" value="Join"> 
+			
+			
+          </form>
+		  
+		  
+
+<h4>Copyright &copy; Atlantic Cinema 2022 </h4>
+
+</footer>
+
+</body>
+
+
+</html>

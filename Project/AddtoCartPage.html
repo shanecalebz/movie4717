@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Atlantic Cinema</title>
+<meta charset="utf-8">
+
+
+<link rel="stylesheet" href="assets/css/atlantic.css">
+
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<div class="logo">
+	<img src="assets/img/logo.gif" height="90" width="250" alt="logo">
+	</div>
+</header>
+<nav><ul>
+	 <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="buytickets.html">Buy Tickets</a></li>
+        <li><a href="cart.html">Cart</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>
+		
+								
+								
+</li>
+
+</ul>
+</nav>
+<main>
+<form method="post" action="assets/php/show_post.php">
+           
+		   <label for = "name"> Movies Title: </label>
+	<input type = "name" name = "name" id = "name" required placeholder = "Enter your Name here" onchange="validateName()"> 
+	<label for = "email"> *E-mail: </label>
+	<input type = "email" name = "email" id = "email" required placeholder = "Enter your Email-ID here" onchange="validateEmail()"> 
+	<label for = "startdate"> Start Date: </label>
+	<input type = "date" name = "date" id = "date" onchange="dateCheck()"> 
+	<label for = "experience"> *Experience: </label>
+	<textarea name = "experience" id = "experience" rows = "4" cols = "40" required placeholder = "Enter your past experience here"></textarea> <br><br>
+	<input type = "submit" value = "Add to Cart"> 
+			
+			
+          </form>
+
+</main>
+
+
+<footer>
+  <form method="post" action="assets/php/show_post.php">
+           
+		   
+	
+	<input type = "email" name = "email" id = "email" required placeholder = "Enter your email address" onchange="validateEmail()"> 
+
+	<input type="submit" value="Join"> 
+			
+			
+          </form>
+		  
+		  
+
+<h4>Copyright &copy; Atlantic Cinema 2022 </h4>
+
+</footer>
+
+</body>
+
+
+</html>
