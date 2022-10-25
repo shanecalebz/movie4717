@@ -131,6 +131,7 @@ img {vertical-align: middle;}
   float: left;
   width: 33.33%;
   padding: 5px;
+  
 }
 
 /* Clearfix (clear floats) */
@@ -154,4 +155,3 @@ footer
   text-align: center;
   padding: 10px;
 }
-
