@@ -34,7 +34,7 @@ function validateEmail(){
 	</div>
 </header>
 <nav><ul>
-	 <li><a href="index.html">Home</a></li>
+	 <li><a href="index.php">Home</a></li>
         <li><a href="movies.html">Movies</a></li>
         <li><a href="buytickets.html">Buy Tickets</a></li>
      
