@@ -7,6 +7,71 @@
 
 <link rel="stylesheet" href="atlantic.css">
 <link rel="stylesheet" href="assets/css/moviedetails.css">
+<style>
+  .home-container {
+      max-width: 95%;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow: hidden;
+      padding: 30px 0;
+    }
+    .movie-card {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .movie-title {
+      padding: 10px 0;
+      font-size: 1.2em;
+    }
+    .poster img {
+      width: 200px;
+      height: 300px;
+      width: 100%;
+      padding-left: 10px;
+    }
+    .movie-rating {
+      background-color: hsl(42, 100%, 71%);
+      color: hsl(218, 18%, 16%);
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 0.8em;
+      margin-bottom: 20px;
+    }
+    .movie-runtime {
+      padding: 20px 0;
+    }
+    .card-buy-ticket {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.13em;
+      background-color: hsl(42, 100%, 71%);
+      border: none;
+      text-decoration: none;
+      color: #333;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    #wrapper {
+      background-color: #f2cc8f;
+      color: #333;
+    }
+</style>
 <script defer src="assets/js/moviedetails.js"></script>
  <script defer src="assets/js/newsletterform.js"></script>
  <script>
@@ -52,15 +117,16 @@ function validateEmail(){
 <main>
 <p>Movie Title: Mrs Harris Goes To Paris <br></p>
  <img src="assets/img/movie3.png"  height="350" width="300"   ><br><br>
-Release Date: 20-10-2022<br>
-Running Time: 116 minutes<br>
-Genre: Comedy<br>
-Director: Anthony Fabian<br>
-
-
-Synopsis: MRS. HARRIS GOES TO PARIS is the enchanting tale of a seemingly ordinary British housekeeper whose dream to own a 
-couture Christian Dior gown takes her on an extraordinary adventure to Paris.
-<br>
+ <div class="movie-card">
+    
+  <p>Release Date: 20-10-2022</p><br>
+    <p>Running Time: 116 minutes</p><br>
+    <p>Genre: Comedy</p><br>
+    <p>Director: James Cameron</p><br>
+    <p>Synopsis: MRS. HARRIS GOES TO PARIS is the enchanting tale of a seemingly ordinary British housekeeper whose dream to own a 
+      couture Christian Dior gown takes her on an extraordinary adventure to Paris.
+  <br>
+</div>
 
 Photos: <br>
 

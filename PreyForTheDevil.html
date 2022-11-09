@@ -7,6 +7,71 @@
 
 <link rel="stylesheet" href="atlantic.css">
 <link rel="stylesheet" href="assets/css/moviedetails.css">
+<style>
+  .home-container {
+      max-width: 95%;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow: hidden;
+      padding: 30px 0;
+    }
+    .movie-card {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .movie-title {
+      padding: 10px 0;
+      font-size: 1.2em;
+    }
+    .poster img {
+      width: 200px;
+      height: 300px;
+      width: 100%;
+      padding-left: 10px;
+    }
+    .movie-rating {
+      background-color: hsl(42, 100%, 71%);
+      color: hsl(218, 18%, 16%);
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 0.8em;
+      margin-bottom: 20px;
+    }
+    .movie-runtime {
+      padding: 20px 0;
+    }
+    .card-buy-ticket {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.13em;
+      background-color: hsl(42, 100%, 71%);
+      border: none;
+      text-decoration: none;
+      color: #333;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    #wrapper {
+      background-color: #f2cc8f;
+      color: #333;
+    }
+</style>
 <script defer src="assets/js/moviedetails.js"></script>
  <script defer src="assets/js/newsletterform.js"></script>
  <script>
@@ -52,21 +117,22 @@ function validateEmail(){
 <main>
 <p>Movie Title: Prey For The Devil <br></p>
 <img src="assets/img/com_movie1.png"  height="350" width="300"   ><br><br>
-Release Date: 27-10-2022<br>
-Running Time: 93 minutes<br>
-Genre: Horror<br>
-Director: Daniel Stamm <br><br>
-
-
-Synopsis: Sister Ann (Jacqueline Byers) believes she is answering a calling to be the first female exorcist… 
-but who, or what, called her? In response to a global rise in demonic possessions, Ann seeks out a place at an exorcism school 
-reopened by the Catholic Church. Until now these schools have only trained priests in the Rite of Exorcism – but a professor (Colin Salmon) 
-recognizes Sister Ann’s gifts and agrees to train her. Thrust onto the spiritual frontline with fellow student Father Dante (Christian Navarro),
- Sister Ann finds herself in a battle for the soul of a young girl, who Sister Ann believes is possessed by the same demon that tormented her 
- own mother years ago.
- Determined to root out the evil, Ann soon realizes the Devil has her right where he wants her.
+<div class="movie-card">
+    
+  <p>Release Date: 27-10-2022</p><br>
+    <p>Running Time: 93 minutes</p><br>
+    <p>Genre: Horror</p><br>
+    <p>Director: Daniel Stamm</p><br>
+    <p>Synopsis: Sister Ann (Jacqueline Byers) believes she is answering a calling to be the first female exorcist… 
+      but who, or what, called her? In response to a global rise in demonic possessions, Ann seeks out a place at an exorcism school 
+      reopened by the Catholic Church. Until now these schools have only trained priests in the Rite of Exorcism – but a professor (Colin Salmon) 
+      recognizes Sister Ann’s gifts and agrees to train her. Thrust onto the spiritual frontline with fellow student Father Dante (Christian Navarro),
+       Sister Ann finds herself in a battle for the soul of a young girl, who Sister Ann believes is possessed by the same demon that tormented her 
+       own mother years ago.
+       Determined to root out the evil, Ann soon realizes the Devil has her right where he wants her.
+  <br>
+</div>
 <br>
-
 Photos: <br>
 
   <div class="row">

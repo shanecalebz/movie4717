@@ -7,6 +7,71 @@
 
 <link rel="stylesheet" href="atlantic.css">
 <link rel="stylesheet" href="assets/css/moviedetails.css">
+<style>
+  .home-container {
+      max-width: 95%;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow: hidden;
+      padding: 30px 0;
+    }
+    .movie-card {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .movie-title {
+      padding: 10px 0;
+      font-size: 1.2em;
+    }
+    .poster img {
+      width: 200px;
+      height: 300px;
+      width: 100%;
+      padding-left: 10px;
+    }
+    .movie-rating {
+      background-color: hsl(42, 100%, 71%);
+      color: hsl(218, 18%, 16%);
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 0.8em;
+      margin-bottom: 20px;
+    }
+    .movie-runtime {
+      padding: 20px 0;
+    }
+    .card-buy-ticket {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.13em;
+      background-color: hsl(42, 100%, 71%);
+      border: none;
+      text-decoration: none;
+      color: #333;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    #wrapper {
+      background-color: #f2cc8f;
+      color: #333;
+    }
+</style>
 <script defer src="assets/js/moviedetails.js"></script>
 	 <script defer src="assets/js/newsletterform.js"></script>
 	 <script>
@@ -49,18 +114,20 @@ function validateEmail(){
 
 </ul>
 </nav>
-<main>
+<main class="home-container">
 <p>Movie Title: Smile <br></p>
  <img src="assets/img/movie2.png"  height="350" width="300"   ><br><br>
-Release Date: 29-09-2022<br>
-Running Time: 115 minutes<br>
-Genre: Horror<br>
-Director: Parker Finn <br>
-
-
-Synopsis: After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter (Sosie Bacon) starts 
-experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, 
-Rose must confront her troubling past in order to survive and escape her horrifying new reality.
+ <div class="movie-card">
+    
+  <p>Release Date: 29-09-2022</p><br>
+    <p>Running Time: 115 minutes</p><br>
+    <p>Genre: Horror</p><br>
+    <p>Director: Parker Finn</p><br>
+    <p>Synopsis: After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter (Sosie Bacon) starts 
+      experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, 
+      Rose must confront her troubling past in order to survive and escape her horrifying new reality.
+  <br>
+</div>
 <br>
 
 Photos: <br>
