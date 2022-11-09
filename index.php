@@ -160,15 +160,15 @@ function validateEmail(){
           </div>
           <div class="mySlides fade">
             <div class="numbertext">2 / 4</div>
-            <a href="Avatar.html"> <img src="assets/img/img_movie3.gif" height="300" width="250" style="width:100%"></a>
+            <a href="Avatar.html"> <img src="assets/img/img_movie3.png" height="300" width="250" style="width:100%"></a>
           </div>
           <div class="mySlides fade">
             <div class="numbertext">3 / 4</div>
-            <a href="Wakanda.html"> <img src="assets/img/img_movie1.gif" height="300" width="250" style="width:100%"></a>
+            <a href="Wakanda.html"> <img src="assets/img/img_movie1.png" height="300" width="250" style="width:100%"></a>
           </div>
           <div class="mySlides fade">
             <div class="numbertext">4 / 4</div>
-            <a href="PreyForTheDevil.html"> <img src="assets/img/img_movie4.gif" height="300" width="250" style="width:100%"></a>
+            <a href="PreyForTheDevil.html"> <img src="assets/img/img_movie4.png" height="300" width="250" style="width:100%"></a>
           </div>
           <a class="prev" onclick="plusSlides(-1)">❮</a>
           <a class="next" onclick="plusSlides(1)">❯</a>
