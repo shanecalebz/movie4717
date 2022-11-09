@@ -107,39 +107,30 @@ function validateEmail(){
 
 </head>
 <body>
-<div id="wrapper">
-<header>
-	<div class="logo">
-	<img src="assets/img/logo.gif" height="90" width="250" alt="logo">
-	</div>
-</header>
-<nav><ul>
-	 <li><a href="index.php">Home</a></li>
+  <div id="wrapper">
+    <header>
+      <div class="logo">
+      <img src="assets/img/logo.gif" height="90" width="250" alt="logo">
+      </div>
+    </header>
+    <nav>
+      <ul>
+	      <li><a href="index.php">Home</a></li>
         <li><a href="movies.html">Movies</a></li>
         <li><a href="buytickets.html">Buy Tickets</a></li>
-        
-		<li><a href="contactus.html">Contact Us</a></li>
-		  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">For Members</a>
-    <div class="dropdown-content">
-      <a href="login.php">Login</a>
-      <a href="register.php">Register</a>
-     
-    </div>
-		
-							
-								
-</li>
-		
-
-
-</ul>
-</nav>
-
-
-<main>
-<!-- notification message -->
-		<?php if (isset($_SESSION['success'])) : ?>
+		    <li><a href="contactus.html">Contact Us</a></li>
+		    <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">For Members</a>
+          <div class="dropdown-content">
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
+          </div>	
+        </li>
+      </ul>
+    </nav>
+    <main>
+    <!-- notification message -->
+		  <?php if (isset($_SESSION['success'])) : ?>
 			<div class="error success" >
 				<h3>
 					<?php 
@@ -148,167 +139,150 @@ function validateEmail(){
 					?>
 				</h3>
 			</div>
-		<?php endif ?>
-		<!-- logged in user information -->
-		<div class="profile_info">
-			
+		  <?php endif ?>
+		  <!-- logged in user information -->
+		  <div class="profile_info">
+        <div>
+          <?php  if (isset($_SESSION['user'])) : ?>
+            <strong><?php echo $_SESSION['user']['username']; ?></strong>
+              <small>
+                <i  style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
+                <br>
+                <a href="index.php?logout='1'" style="color: red;">logout</a>
+              </small>
+          <?php endif ?>
+        </div>
+		  </div>
+      <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <a href="movies.html"> <img src="assets/img/movie1.png" height="200" width="250" style="width:100%"></a>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <a href="movies.html"> <img src="assets/img/logo.gif" style="width:100%"></a>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <a href="movies.html"> <img src="assets/img/logo.gif" style="width:100%"></a>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <a href="movies.html"> <img src="assets/img/logo.gif" style="width:100%"></a>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-			<div>
-				<?php  if (isset($_SESSION['user'])) : ?>
-					<strong><?php echo $_SESSION['user']['username']; ?></strong>
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
 
-					<small>
-						<i  style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
-						<br>
-						<a href="index.php?logout='1'" style="color: red;">logout</a>
-					</small>
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
 
-				<?php endif ?>
-			</div>
-		</div>
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
- <a href="Wakanda.html"> <img src="assets/img/img_movie1.png" height="300" width="250" style="width:100%"></a>
-  
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 4</div>
-   <a href="smile.html"> <img src="assets/img/img_movie2.png" height="300" width="250" style="width:100%"></a>
-
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-   <a href="Avatar.html"> <img src="assets/img/img_movie3.png" height="300" width="250" style="width:100%"></a>
- 
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-   <a href="PreyForTheDevil.html"> <img src="assets/img/img_movie4.png" height="300" width="250" style="width:100%"></a>
-  
-</div>
-
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-</div>
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-<h4>Now Showing</h4>
-					<div class="poster-grid">
-						<div class="movie-card">
-							<div class="poster">
-								<a href="blackadam.html">
-									<img src="assets/img/movie1_small.png" alt="">
-								</a>
-							</div>
-							<h2 class="movie-title">Black Adam</h2>
-							<p class="movie-rating">PG-13</p>
-							<p class="movie-runtime">125 minutes</p>
-							<a href="#" class="card-buy-ticket">Buy Tickets</a>
-						</div>
-						<div class="movie-card">
-							<div class="poster">
-								<a href="blackadam.html">
-									<img src="assets/img/movie2_small.png" alt="">
-								</a>
-							</div>
-							<h2 class="movie-title">Smile</h2>
-							<p class="movie-rating">M18</p>
-							<p class="movie-runtime">115 minutes</p>
-							<a href="#" class="card-buy-ticket">Buy Tickets</a>
-						</div>
-						<div class="movie-card">
-							<div class="poster">
-								<a href="blackadam.html">
-									<img src="assets/img/movie3_small.png" alt="">
-								</a>
-							</div>
-							<h2 class="movie-title">Mrs. Harris Goes To Paris</h2>
-							<p class="movie-rating">PG</p>
-							<p class="movie-runtime">90 minutes</p>
-							<a href="#" class="card-buy-ticket">Buy Tickets</a>
-						</div>
-					</div>
-					<h4>Coming Soon</h4>
-					<div class="poster-grid">
-						<div class="movie-card">
-							<div class="poster">
-								<a href="blackadam.html">
-									<img src="assets/img/com_movie1_small.png" alt="">
-								</a>
-							</div>
-							<h2 class="movie-title">Prey For The Devil</h2>
-							<p class="movie-rating">NC-16</p>
-							<p class="movie-runtime">93 minutes</p>
-						</div>
-						<div class="movie-card">
-							<div class="poster">
-								<a href="blackadam.html">
-									<img src="assets/img/com_movie2_small.png" alt="">
-								</a>
-							</div>
-							<h2 class="movie-title">Black Panther</h2>
-							<p class="movie-rating">PG</p>
-							<p class="movie-runtime">135 minutes</p>
-						</div>
-						<div class="movie-card">
-							<div class="poster">
-								<a href="blackadam.html">
-									<img src="assets/img/com_movie3_small.png" alt="">
-								</a>
-							</div>
-							<h2 class="movie-title">Avatar</h2>
-							<p class="movie-rating">N/A</p>
-							<p class="movie-runtime">280 minutes</p>
-						</div>
-					</div>
-
-
-
-
-</main>
-
-
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <div class="home-container">
+          <div class="container">
+            <h4>Now Showing</h4>
+            <div class="poster-grid">
+              <div class="movie-card">
+                <div class="poster">
+                  <a href="blackadam.html">
+                    <img src="assets/img/movie1_small.png" alt="">
+                  </a>
+                </div>
+                <h2 class="movie-title">Black Adam</h2>
+                <p class="movie-rating">PG-13</p>
+                <p class="movie-runtime">125 minutes</p>
+                <a href="blackadam.html" class="card-buy-ticket">Buy Tickets</a>
+              </div>
+              <div class="movie-card">
+                <div class="poster">
+                  <a href="smile.html">
+                    <img src="assets/img/movie2_small.png" alt="">
+                  </a>
+                </div>
+                <h2 class="movie-title">Smile</h2>
+                <p class="movie-rating">M18</p>
+                <p class="movie-runtime">115 minutes</p>
+                <a href="smile.html" class="card-buy-ticket">Buy Tickets</a>
+              </div>
+              <div class="movie-card">
+                <div class="poster">
+                  <a href="mrsharry.html">
+                    <img src="assets/img/movie3_small.png" alt="">
+                  </a>
+                </div>
+                <h2 class="movie-title">Mrs. Harris Goes To Paris</h2>
+                <p class="movie-rating">PG</p>
+                <p class="movie-runtime">90 minutes</p>
+                <a href="mrsharry.html" class="card-buy-ticket">Buy Tickets</a>
+              </div>
+            </div>
+            <h4>Coming Soon</h4>
+            <div class="poster-grid">
+              <div class="movie-card">
+                <div class="poster">
+                  <a href="PreyForTheDevil.html">
+                    <img src="assets/img/com_movie1_small.png" alt="">
+                  </a>
+                </div>
+                <h2 class="movie-title">Prey For The Devil</h2>
+                <p class="movie-rating">NC-16</p>
+                <p class="movie-runtime">93 minutes</p>
+              </div>
+              <div class="movie-card">
+                <div class="poster">
+                  <a href="Wakanda.html">
+                    <img src="assets/img/com_movie2_small.png" alt="">
+                  </a>
+                </div>
+                <h2 class="movie-title">Black Panther</h2>
+                <p class="movie-rating">PG</p>
+                <p class="movie-runtime">135 minutes</p>
+              </div>
+              <div class="movie-card">
+                <div class="poster">
+                  <a href="Avatar.html">
+                    <img src="assets/img/com_movie3_small.png" alt="">
+                  </a>
+                </div>
+                <h2 class="movie-title">Avatar</h2>
+                <p class="movie-rating">N/A</p>
+                <p class="movie-runtime">280 minutes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 <footer>
   <form action="newsletterform.php" method="post" class="message">
 
