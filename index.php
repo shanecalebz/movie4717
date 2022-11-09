@@ -13,6 +13,75 @@ if (!isLoggedIn()) {
 <title>Atlantic Cinema</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="atlantic.css">
+<style>
+  .home-container {
+				max-width: 95%;
+				padding: 0 20px;
+				margin: 0 auto;
+			}
+			.container {
+				display: flex;
+				flex-direction: column;
+				padding: 20px;
+			}
+			.poster-grid {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				overflow: hidden;
+				padding: 30px 0;
+			}
+			.movie-card {
+				width: 250px;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				background-color: #333;
+				color: white;
+				padding: 10px;
+				margin: 10px;
+				border-radius: 10px;
+				box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+				transition: 0.3s ease-in-out;
+			}
+			.movie-card:hover {
+				transform: scale(1.05);
+			}
+			.movie-title {
+				padding: 10px 0;
+				font-size: 1.2em;
+			}
+			.poster img {
+				width: 200px;
+				height: 300px;
+				width: 100%;
+				padding-left: 10px;
+			}
+			.movie-rating {
+				background-color: hsl(42, 100%, 71%);
+				color: hsl(218, 18%, 16%);
+				border-radius: 5px;
+				padding: 5px;
+				font-size: 0.8em;
+				margin-bottom: 20px;
+			}
+			.movie-runtime {
+				padding: 20px 0;
+			}
+			.card-buy-ticket {
+				font-family: "Montserrat", sans-serif;
+				font-size: 1.13em;
+				background-color: hsl(42, 100%, 71%);
+				border: none;
+				text-decoration: none;
+				color: #333;
+				border-radius: 5px;
+				padding: 5px;
+			}
+			#wrapper {
+				background-color: #f2cc8f;
+				color: #333;
+			}
+</style>
 
  <script defer src="assets/js/newsletterform.js"></script>
 <script>
@@ -165,30 +234,74 @@ function showSlides(n) {
 }
 </script>
 <h4>Now Showing</h4>
-<div class="row">
-  <div class="column">
-   <a href="blackadam.html"> <img src="assets/img/movie1_small.png" alt="pic1" height="200" width="10" style="width:50%"></a>
-  </div>
-  <div class="column">
-      <a href="smile.html"> <img src="assets/img/movie2_small.png" alt="pic2" height="200" width="10" style="width:50%"></a>
-  </div>
-  <div class="column">
-     <a href="mrsharry.html"> <img src="assets/img/movie3_small.png" alt="pic3" height="200" width="10" style="width:50%"></a>
-  </div>
-</div>
-
-<h4>Coming Soon</h4>
-<div class="row">
-  <div class="column">
-       <a href="PreyForTheDevil.html"> <img src="assets/img/com_movie1_small.png" alt="Snow" height="200" width="10" style="width:50%"></a>
-  </div>
-  <div class="column">
-       <a href="Wakanda.html"> <img src="assets/img/com_movie2_small.png" alt="Snow" height="200" width="10" style="width:50%"></a>
-  </div>
-  <div class="column">
-      <a href="Avatar.html"> <img src="assets/img/com_movie3_small.png" alt="Snow" height="200" width="10" style="width:50%"></a>
-  </div>
-</div>
+					<div class="poster-grid">
+						<div class="movie-card">
+							<div class="poster">
+								<a href="blackadam.html">
+									<img src="assets/img/movie1_small.png" alt="">
+								</a>
+							</div>
+							<h2 class="movie-title">Black Adam</h2>
+							<p class="movie-rating">PG-13</p>
+							<p class="movie-runtime">125 minutes</p>
+							<a href="#" class="card-buy-ticket">Buy Tickets</a>
+						</div>
+						<div class="movie-card">
+							<div class="poster">
+								<a href="blackadam.html">
+									<img src="assets/img/movie2_small.png" alt="">
+								</a>
+							</div>
+							<h2 class="movie-title">Smile</h2>
+							<p class="movie-rating">M18</p>
+							<p class="movie-runtime">115 minutes</p>
+							<a href="#" class="card-buy-ticket">Buy Tickets</a>
+						</div>
+						<div class="movie-card">
+							<div class="poster">
+								<a href="blackadam.html">
+									<img src="assets/img/movie3_small.png" alt="">
+								</a>
+							</div>
+							<h2 class="movie-title">Mrs. Harris Goes To Paris</h2>
+							<p class="movie-rating">PG</p>
+							<p class="movie-runtime">90 minutes</p>
+							<a href="#" class="card-buy-ticket">Buy Tickets</a>
+						</div>
+					</div>
+					<h4>Coming Soon</h4>
+					<div class="poster-grid">
+						<div class="movie-card">
+							<div class="poster">
+								<a href="blackadam.html">
+									<img src="assets/img/com_movie1_small.png" alt="">
+								</a>
+							</div>
+							<h2 class="movie-title">Prey For The Devil</h2>
+							<p class="movie-rating">NC-16</p>
+							<p class="movie-runtime">93 minutes</p>
+						</div>
+						<div class="movie-card">
+							<div class="poster">
+								<a href="blackadam.html">
+									<img src="assets/img/com_movie2_small.png" alt="">
+								</a>
+							</div>
+							<h2 class="movie-title">Black Panther</h2>
+							<p class="movie-rating">PG</p>
+							<p class="movie-runtime">135 minutes</p>
+						</div>
+						<div class="movie-card">
+							<div class="poster">
+								<a href="blackadam.html">
+									<img src="assets/img/com_movie3_small.png" alt="">
+								</a>
+							</div>
+							<h2 class="movie-title">Avatar</h2>
+							<p class="movie-rating">N/A</p>
+							<p class="movie-runtime">280 minutes</p>
+						</div>
+					</div>
 
 
 
