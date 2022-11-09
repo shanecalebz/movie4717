@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Atlantic Cinema</title>
+<meta charset="utf-8">
+
+
+<link rel="stylesheet" href="atlantic.css">
+<script defer src="assets/js/newsletterform.js"></script>
+<script defer src="assets/js/Contactform.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<div class="logo">
+	<img src="assets/img/logo.gif" height="90" width="250" alt="logo">
+	</div>
+	
+</header>
+<nav><ul>
+	 <li><a href="index.php">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="buytickets.html">Buy Tickets</a></li>
+        
+		<li><a href="contactus.html">Contact Us</a></li>
+		
+								
+								
+</li>
+
+</ul>
+</nav>
+<main>
+<table >
+<tr><th>Email:</th> <td>Atlantic_Cinema@localhost</td> 
+</tr>
+<tr><th>Contact No:</th><td>6123 4567</td> 
+</tr>
+<tr><th>Location:</th> <td>123 East Coast Road, #05-01/02, <br>
+i12 Katong, <br>
+Singapore 123123</td> 
+</tr>
+<tr><th>Opening Hours:</th><td>Monday to Thursday: 10am - 12am <br>
+Friday to Sunday: 10am - 2am
+</td> 
+</tr>
+
+</table>
+<br> <br>
+ 
+			
+          
+		  <form action="contact.php" method="post" class="message">
+			 Please send in your queries <br> 
+			<div class="message">
+				<label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" id="name" name="name" onchange="validateName()" placeholder="" required />
+			</div><br>
+			<div class="message">
+			<label for = "email"> E-mail: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type = "email" name = "email" id = "email" required placeholder = "Enter your Email-ID here" onchange="validateEmail()"> <br><br>
+			</div>
+			<div class="message">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="5" required placeholder = "Enter your Comment here" ></textarea>
+            </div>
+			
+			<button type="submit">Submit</button>
+			<input type = "reset" value = "Reset"> 
+		</form>
+
+</main>
+
+
+<footer>
+ <form action="newsletterform.php" method="post" class="message">
+
+           
+		   
+	<div class="message">
+	<input type = "email" name = "email" id = "email" required placeholder = "Enter your email address" onchange="validateEmail()"> 
+
+	<input type="submit" value="Join"> 
+			
+		</div>	
+          </form>
+		  
+
+<h4>Copyright &copy; Atlantic Cinema 2022 </h4>
+
+</footer>
+
+</body>
+
+
+</html>

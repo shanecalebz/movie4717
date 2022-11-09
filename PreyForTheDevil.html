@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Atlantic Cinema</title>
+<meta charset="utf-8">
+
+
+<link rel="stylesheet" href="atlantic.css">
+<link rel="stylesheet" href="assets/css/moviedetails.css">
+<script defer src="assets/js/moviedetails.js"></script>
+ <script defer src="assets/js/newsletterform.js"></script>
+ <script>
+function validateEmail(){
+	var email = document.getElementById("email").value;
+	email.trim();
+	if(email.length > 0){ //make sure it is not empty
+		var regexp = /^([\w\.-])+@([\w]+\.){1,3}([A-z]){2,3}$/;
+		if(regexp.test(email)){
+			return true;
+		}
+		else{
+			alert("Email entered in wrong format.");
+			return false;
+		}
+		alert("Please fill in your Email.");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<div class="logo">
+	<img src="assets/img/logo.gif" height="90" width="250" alt="logo">
+	</div>
+	
+</header>
+<nav><ul>
+	 <li><a href="index.php">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="buytickets.html">Buy Tickets</a></li>
+        
+		<li><a href="contactus.html">Contact Us</a></li>
+		
+								
+								
+</li>
+
+</ul>
+</nav>
+<main>
+<p>Movie Title: Prey For The Devil <br></p>
+<img src="assets/img/com_movie1.png"  height="350" width="300"   ><br><br>
+Release Date: 27-10-2022<br>
+Running Time: 93 minutes<br>
+Genre: Horror<br>
+Director: Daniel Stamm <br><br>
+
+
+Synopsis: Sister Ann (Jacqueline Byers) believes she is answering a calling to be the first female exorcist… 
+but who, or what, called her? In response to a global rise in demonic possessions, Ann seeks out a place at an exorcism school 
+reopened by the Catholic Church. Until now these schools have only trained priests in the Rite of Exorcism – but a professor (Colin Salmon) 
+recognizes Sister Ann’s gifts and agrees to train her. Thrust onto the spiritual frontline with fellow student Father Dante (Christian Navarro),
+ Sister Ann finds herself in a battle for the soul of a young girl, who Sister Ann believes is possessed by the same demon that tormented her 
+ own mother years ago.
+ Determined to root out the evil, Ann soon realizes the Devil has her right where he wants her.
+<br>
+
+Photos: <br>
+
+  <div class="row">
+  <div class="column">
+    <img src="assets/img/com_movie1_small.png"  height="200" width="150"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="assets/img/com_movie1_small.png" height="200" width="150" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="assets/img/com_movie1_small.png" height="200" width="150"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="assets/img/com_movie1_small.png" height="200" width="150"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="assets/img/com_movie1_small.png" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="assets/img/com_movie1_small.png" style="width:20%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="assets/img/com_movie1_small.png" style="width:20%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="assets/img/com_movie1_small.png" style="width:20%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="assets/img/com_movie1_small.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/img/com_movie1_small.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/img/com_movie1_small.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/img/com_movie1_small.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</main>
+
+
+<footer>
+  <form action="newsletterform.php" method="post" class="message">
+
+           
+		   
+	<div class="message">
+	<input type = "email" name = "email" id = "email" required placeholder = "Enter your email address" onchange="validateEmail()"> 
+
+	<input type="submit" value="Join"> 
+			
+		</div>	
+          </form>
+		  
+		  
+
+<h4>Copyright &copy; Atlantic Cinema 2022 </h4>
+
+</footer>
+<script>
+
+</script>
+</body>
+
+
+</html>
