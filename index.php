@@ -170,25 +170,25 @@ function validateEmail(){
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 4</div>
- <a href="movies.html"> <img src="assets/img/movie1.png" height="200" width="250" style="width:100%"></a>
+ <a href="Wakanda.html"> <img src="assets/img/img_movie1.png" height="300" width="250" style="width:100%"></a>
   
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 4</div>
-   <a href="movies.html"> <img src="assets/img/logo.gif" style="width:100%"></a>
+   <a href="smile.html"> <img src="assets/img/img_movie2.png" height="300" width="250" style="width:100%"></a>
 
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
-   <a href="movies.html"> <img src="assets/img/logo.gif" style="width:100%"></a>
+   <a href="Avatar.html"> <img src="assets/img/img_movie3.png" height="300" width="250" style="width:100%"></a>
  
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
-   <a href="movies.html"> <img src="assets/img/logo.gif" style="width:100%"></a>
+   <a href="PreyForTheDevil.html"> <img src="assets/img/img_movie4.png" height="300" width="250" style="width:100%"></a>
   
 </div>
 
