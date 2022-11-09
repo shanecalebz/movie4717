@@ -4,19 +4,21 @@
 
 <h1>Welcome to Atlantic Cinema</h1>
 
-<p>Monthly Newsletter</p>
+<p>Purchase confirmed</p>
 
 <?php
 $to      = 'f31ee@localhost';
 $subject = 'the subject';
-$message = 'hello from php mail';
-$headers = 'From: Atlantic_Cinema@localhost' . "\r\n" .
-    'Reply-To: Atlantic_Cinema@localhost' . "\r\n" .
+$message = 'Purchase confirmation successful';
+$headers = 'From: f32ee@localhost' . "\r\n" .
+    'Reply-To: f31ee@localhost' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers,'-fAtlantic_Cinema@localhost');
 echo ("mail sent to : ".$to);
-?> 
 
+?> 
+<br>
+<a href="index.php">Go back</a>
 </body>
 </html>
